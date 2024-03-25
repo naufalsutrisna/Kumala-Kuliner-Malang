@@ -1,0 +1,175 @@
+.text {
+    font-family:'poppins';
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.subtitle{
+    vertical-align:center; 
+    align: center;
+    line-height: 60px;
+    line-height: 100%;
+    font-size: 40px; 
+    margin: 41px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.frame {
+    width: 700px;
+    height: 170px;
+    border-radius: 10px;
+    background-color: #B5B5B5;
+}
+
+.link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+.coba{
+    margin-left: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 17px;
+}
+
+.waviy span {
+  font-family: 'arial', cursive;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  animation: waviy 2s infinite;
+  animation-delay: calc(.1s * var(--i)* 0.5);
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-5px)
+  }
+}
+
+.img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+.hero-image {
+    background-image: url("/Picture/foodie.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 650px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+body {
+    font-family: poppins;
+}
+
+.li{
+  list-style: none;
+}
+
+.a{
+  text-decoration:none;
+  font-family:poppins;
+  position:relative;
+}
+
+.li .a::before{
+  content:'';
+  position:absolute;
+  width:100%;
+  height:2px;
+  left:0;
+  bottom:0;
+  background:black;
+  transform:scaleX(0);
+  transition:0.4s;
+}
+
+.li .a:hover::before{
+  transform:scaleX(1);
+}
+
+.popup {
+  transition: .2x linear;
+}
+
+.popup:hover {
+  transform: scale(1.02);
+}
+
+.b {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.item {
+  position: relative;
+  border: 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+}
+.item img {
+  max-width: 100%;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  transition: .5s ease;
+}
+.item:hover img {
+  -webkit-transform: scale(1.05,1.05);
+  -moz-transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
+}
+.item:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #000;
+  background: rgba(0,0,0,0.3);
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.item:hover:before {
+  opacity: 1;
+}
+
